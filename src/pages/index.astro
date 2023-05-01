@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import logo from '@images/logo.svg'
+const pageTitle = 'Laravel From Scratch Blog'
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class='px-6 py-8'>
+    <nav class='flex items-center justify-between'>
+      <div>
+        <a href='/'>
+          <img src={logo} alt='Laracasts Logo' width='165' height='16' />
+        </a>
+      </div>
+      <div>
+        <a href='/' class='text-xs font-bold uppercase text-black'>Home Page</a>
+        <a
+          href='#'
+          class='ml-3 rounded-full bg-blue-500 px-5 py-3 text-xs font-semibold uppercase text-white'
+          >Subscribe for Updates</a
+        >
+      </div>
+    </nav>
+    <header class='mt-10 text-center'>
+      <div class='mx-auto max-w-4xl'>
+        <h1 class='text-4xl text-blue-500'>Latest Laravel From Scratch News</h1>
+      </div>
+    </header>
+  </section>
+</BaseLayout>
